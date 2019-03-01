@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.books.com/ontologies/books.owl#"
+     xml:base="http://www.books.com/ontologies/books.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.books.com/ontologies/books.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.books.com/ontologies/books.owl#hasAuthor">
+        <owl:inverseOf rdf:resource="http://www.books.com/ontologies/books.owl#hasBook"/>
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasBook -->
+
+    <owl:ObjectProperty rdf:about="http://www.books.com/ontologies/books.owl#hasBook">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <rdfs:range rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasEdition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasEdition">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasFirstName">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasISBN">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasLastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasLastName">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasMiddleName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasMiddleName">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasName">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasNumberOfPages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasNumberOfPages">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasPopularName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasPopularName">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasPrice">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasPublisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasPublisher">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasSubtheme -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasSubtheme">
+        <rdfs:subPropertyOf rdf:resource="http://www.books.com/ontologies/books.owl#hasTheme"/>
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasSubtitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasSubtitle">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasTheme -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasTheme">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasTitle">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasVolume">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#hasYearOfPublication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.books.com/ontologies/books.owl#hasYearOfPublication">
+        <rdfs:domain rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Autor -->
+
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Autor">
+        <rdfs:subClassOf rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Didático -->
+
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Didático">
+        <rdfs:subClassOf rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Entretenimento -->
+
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Entretenimento">
+        <rdfs:subClassOf rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Infantil -->
+
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Infantil">
+        <rdfs:subClassOf rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Livro -->
+
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Livro">
+        <owl:disjointWith rdf:resource="http://www.books.com/ontologies/books.owl#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Pessoa -->
+
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Pessoa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_1">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_1"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8532508138</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">136</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocco</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laços de Família</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laços de Família - Clarice Lispector</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_10"/>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_11"/>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_12"/>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_2">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_2"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8525406791</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">256</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&amp;PM EDITORES</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dom Casmurro</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1997</hasYearOfPublication>
+        <rdfs:comment>Dom Casmurro - Machado de Assis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_3">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_3"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8532287441</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">232</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTD</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dom Quixote</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2013</hasYearOfPublication>
+        <rdfs:comment>Dom Quixote - Miguel de Cervantes Saavedra</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_4">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_4"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8532511015</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">224</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocco</hasPublisher>
+        <hasSubtitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Livro 1</hasSubtitle>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter e a Pedra Filosofal</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter e a Pedra Filosofal - J. K. Rowling</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_5">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_5"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8521612591</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">636</hasNumberOfPages>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#float">218.0</hasPrice>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTC</hasPublisher>
+        <hasSubtheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matemática</hasSubtheme>
+        <hasSubtitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume 1</hasSubtitle>
+        <hasTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciências Exatas</hasTheme>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Um Curso de Cálculo</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Um Curso de Cálculo, Volume 1 - Hamilton Luiz Guidorizzi</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_6">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_7">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_8">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Book_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_9"/>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Person_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_1">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_1"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lispector</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice Lispector</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice Lispector</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Person_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_2">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_2"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assis</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado de Assis</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado de Assis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Person_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_3">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_3"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saavedra</hasLastName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cervantes</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel de Cervantes Saavedra</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel de Cervantes Saavedra</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Person_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_4">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_4"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joanne</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rowling</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joanne Rowling</hasName>
+        <hasPopularName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. K. Rowling</hasPopularName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. K. Rowling</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Person_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_5">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_5"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton</hasFirstName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guidorizzi</hasMiddleName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luiz</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
