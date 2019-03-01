@@ -294,19 +294,25 @@
 
     <!-- http://www.books.com/ontologies/books.owl#Book_10 -->
 
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_10"/>
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_10">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.books.com/ontologies/books.owl#Book_11 -->
 
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_11"/>
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_11">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.books.com/ontologies/books.owl#Book_12 -->
 
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_12"/>
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_12">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+    </owl:NamedIndividual>
     
 
 
@@ -387,6 +393,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_6">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_6"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8522112878</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">388</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cengage do Brasil</hasPublisher>
+        <hasSubtheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matemática</hasSubtheme>
+        <hasSubtitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aprendizagem com o apoio de software</hasSubtitle>
+        <hasTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciências Exatas</hasTheme>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cálculo Numérico</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cálculo Numérico, Aprendizagem com o apoio de software - Selma Helena de Vasconcelos Arenales</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -409,7 +427,9 @@
 
     <!-- http://www.books.com/ontologies/books.owl#Book_9 -->
 
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_9"/>
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_9">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+    </owl:NamedIndividual>
     
 
 
@@ -477,6 +497,20 @@
         <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luiz</hasMiddleName>
         <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</hasName>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Person_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_6">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_6"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arenales</hasLastName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vasconcelos</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena de Vasconcelos Arenales</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena de Vasconcelos Arenales</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
