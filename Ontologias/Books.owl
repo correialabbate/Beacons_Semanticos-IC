@@ -242,9 +242,9 @@
     
 
 
-    <!-- http://www.books.com/ontologies/books.owl#Infantil -->
+    <!-- http://www.books.com/ontologies/books.owl#Infantojuvenil -->
 
-    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Infantil">
+    <owl:Class rdf:about="http://www.books.com/ontologies/books.owl#Infantojuvenil">
         <rdfs:subClassOf rdf:resource="http://www.books.com/ontologies/books.owl#Livro"/>
     </owl:Class>
     
@@ -275,11 +275,172 @@
     
 
 
+    <!-- http://www.books.com/ontologies/books.owl#Author_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_1">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_1"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lispector</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice Lispector</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice Lispector</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_10">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_10"/>
+        <hasPopularName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irmãos Grimm</hasPopularName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irmãos Grimm</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_11">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_11"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netter</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank H. Netter</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank H. Netter</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_12">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_12"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raven</hasLastName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Hamilton Raven</hasName>
+        <hasPopularName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter H. Raven</hasPopularName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Hamilton Raven</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_2">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_2"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assis</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado de Assis</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado de Assis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_3">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_3"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saavedra</hasLastName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cervantes</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel de Cervantes Saavedra</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel de Cervantes Saavedra</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_4">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_4"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joanne</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rowling</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joanne Rowling</hasName>
+        <hasPopularName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. K. Rowling</hasPopularName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. K. Rowling</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_5">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_5"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton</hasFirstName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guidorizzi</hasMiddleName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luiz</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_6">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_6"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arenales</hasLastName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vasconcelos</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena de Vasconcelos Arenales</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena de Vasconcelos Arenales</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_7">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_7"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeff</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kinney</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeff Kinney</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeff Kinney</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_8">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_8"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antoine</hasFirstName>
+        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saint-Exupery</hasLastName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antoine de Saint-Exupery</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antoine de Saint-Exupery</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.books.com/ontologies/books.owl#Author_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Author_9">
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
+        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_9"/>
+        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hans</hasFirstName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andersen</hasMiddleName>
+        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christian</hasMiddleName>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hans Christian Andersen</hasName>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hans Christian Andersen</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.books.com/ontologies/books.owl#Book_1 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_1">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
-        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_1"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_1"/>
         <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
         <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8532508138</hasISBN>
         <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
@@ -295,7 +456,16 @@
     <!-- http://www.books.com/ontologies/books.owl#Book_10 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_10">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantojuvenil"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_10"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8585466596</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">96</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Companhia das Letras</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contos de Grimm</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contos de Grimm – Irmãos Grimm</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -303,7 +473,18 @@
     <!-- http://www.books.com/ontologies/books.owl#Book_11 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_11">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_11"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8535237488</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">624</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elsevier</hasPublisher>
+        <hasSubtheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biologia</hasSubtheme>
+        <hasTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciências Naturais</hasTheme>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netter - Atlas de Anatomia Humana</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Netter - Atlas de Anatomia Humana - Frank H. Netter</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -311,7 +492,18 @@
     <!-- http://www.books.com/ontologies/books.owl#Book_12 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_12">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_12"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">852772362X</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">876</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guanabara</hasPublisher>
+        <hasSubtheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biologia</hasSubtheme>
+        <hasTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciências Naturais</hasTheme>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biologia Vegetal</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2014</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biologia Vegetal - Peter H. Raven</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -320,7 +512,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_2">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
-        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_2"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_2"/>
         <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
         <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8525406791</hasISBN>
         <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
@@ -337,7 +529,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_3">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
-        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_3"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_3"/>
         <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
         <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8532287441</hasISBN>
         <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
@@ -354,7 +546,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_4">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Entretenimento"/>
-        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_4"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_4"/>
         <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
         <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8532511015</hasISBN>
         <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
@@ -372,7 +564,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_5">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
-        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_5"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_5"/>
         <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasEdition>
         <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8521612591</hasISBN>
         <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
@@ -393,7 +585,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_6">
         <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
-        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Person_6"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_6"/>
         <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
         <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8522112878</hasISBN>
         <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
@@ -412,7 +604,16 @@
     <!-- http://www.books.com/ontologies/books.owl#Book_7 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_7">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantojuvenil"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_7"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8576831309</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">224</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vergara &amp; Riba</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diário de um Banana 1</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2008</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diário de um Banana 1 – Jeff Kinney</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -420,7 +621,16 @@
     <!-- http://www.books.com/ontologies/books.owl#Book_8 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_8">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Didático"/>
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantojuvenil"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_8"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">857406677X</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">176</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Companhia das Letras</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Pequeno Príncipe</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Pequeno Príncipe – Antoine de Saint-Exupery</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -428,89 +638,16 @@
     <!-- http://www.books.com/ontologies/books.owl#Book_9 -->
 
     <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Book_9">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantil"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.books.com/ontologies/books.owl#Person_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_1">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
-        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_1"/>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice</hasFirstName>
-        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lispector</hasLastName>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice Lispector</hasName>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clarice Lispector</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.books.com/ontologies/books.owl#Person_2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_2">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
-        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_2"/>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado</hasFirstName>
-        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assis</hasLastName>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado de Assis</hasName>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machado de Assis</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.books.com/ontologies/books.owl#Person_3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_3">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
-        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_3"/>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel</hasFirstName>
-        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saavedra</hasLastName>
-        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cervantes</hasMiddleName>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel de Cervantes Saavedra</hasName>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel de Cervantes Saavedra</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.books.com/ontologies/books.owl#Person_4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_4">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
-        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_4"/>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joanne</hasFirstName>
-        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rowling</hasLastName>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joanne Rowling</hasName>
-        <hasPopularName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. K. Rowling</hasPopularName>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J. K. Rowling</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.books.com/ontologies/books.owl#Person_5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_5">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
-        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_5"/>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton</hasFirstName>
-        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guidorizzi</hasMiddleName>
-        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luiz</hasMiddleName>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</hasName>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton Luiz Guidorizzi</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.books.com/ontologies/books.owl#Person_6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.books.com/ontologies/books.owl#Person_6">
-        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Autor"/>
-        <hasBook rdf:resource="http://www.books.com/ontologies/books.owl#Book_6"/>
-        <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena</hasFirstName>
-        <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arenales</hasLastName>
-        <hasMiddleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vasconcelos</hasMiddleName>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena de Vasconcelos Arenales</hasName>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selma Helena de Vasconcelos Arenales</rdfs:comment>
+        <rdf:type rdf:resource="http://www.books.com/ontologies/books.owl#Infantojuvenil"/>
+        <hasAuthor rdf:resource="http://www.books.com/ontologies/books.owl#Author_9"/>
+        <hasEdition rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasEdition>
+        <hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8520423957</hasISBN>
+        <hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Português</hasLanguage>
+        <hasNumberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#int">51</hasNumberOfPages>
+        <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manole</hasPublisher>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Patinho Feio</hasTitle>
+        <hasYearOfPublication rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</hasYearOfPublication>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O Patinho Feio – Hans Christian Andersen</rdfs:comment>
     </owl:NamedIndividual>
 </rdf:RDF>
 
